@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Installs and configures Nginx to serve Holberton School on port 80
+apt-get update -y
+apt-get install -y nginx
+echo "Holberton School" > /var/www/html/index.html
+service nginx restart
